@@ -1,0 +1,67 @@
+<body>
+    <div class="filter">
+        <label><span id="label">Filtrer selon vos prix</span></label>
+        <input type="number" min="50" name="range" id="range">
+
+    </div>
+    <div class="container">
+        <li id="id_client" hidden>
+            <%= id_client%>
+        </li>
+        <div class="carou">
+            <div class="btng">
+                <img id="g" src="/img/left.svg">
+
+            </div>
+            <div class="btnd">
+                <img id="d" src="/img/right.svg">
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="information" hidden=true>
+        <div class="info_header">
+            <p class="dt">Details</p>
+            <div class="annuler">
+                <img src="/img/cancel.png" alt="cancel">
+            </div>
+        </div>
+        <div class="info_body">
+            <div class="info_titre"></div>
+            <div class="info_bbody">
+                <div class="info_img">
+                    <img src="" alt="" id="img">
+                </div>
+                <div class="info_panier">
+                    <div class="info_quantite">
+                        <label class="info_label">Quantité :</label>
+                        <img src="/img/minus.png" class="qimg" id="minus" alt="minus">
+                        <p class="info_quantity"></p>
+                        <img src="/img/plus.png" class="qimg" id="plus" alt="plus">
+                    </div>
+                    <div class="info_quantite">
+                        <label class="info_label">Disponible : </label>
+                        <p class="disponible"></p>
+                    </div>
+                    <div class="btn_cmd">
+                        <button class="cmd">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="info_footer">
+            <div class="info_discription">
+                <p class="discription">voila ma petit discription</p>
+                <div class="pr">
+                    <p class="info_prix">26</p>
+                    <img src="/img/euro.png" alt="1" class="euro qimg">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>

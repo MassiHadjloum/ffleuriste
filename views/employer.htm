@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Bouquets fleurs</title>
+    <script src="../assets/js/jquery-3.5.1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../assets/css/command.css">
+    <script src="../assets/js/employer.js" type="text/javascript"></script>
+</head>
+
+<body class="bdcmd">
+    <div class="container_cmd">
+        <div class="title" style="width: 100%; text-align: center;">
+            <h2>Bien venu sur votre panier</h2>
+            <a href="/userhome"><img src="../assets/img/previous.svg" alt="back"></a>
+        </div>
+        <div class="btn">
+            <button class="btn_cmd">Commande</button>
+        </div>
+        <div class="nav">
+            <div class="encours">
+                <a href="http://localhost:8080/cmd_en_cours" class="btn_encours" id="encours">Commande en cours</a>
+            </div>
+            <div class="encours">
+                <a href="/cmd_done" class="btn_encours" id="done">Commande terminé</a>
+            </div>
+        </div>
+        <div class="commandes">
+            <div class="liste" style="margin-top: 50px; margin-bottom: 0">
+                <h1 class="li">Liste des commandes predifines</h1>
+            </div>
+            <table class="table">
+                <thead class="thead">
+                    <th>ID client</th>
+                    <th>Bouquet</th>
+                    <th>Quantité</th>
+                    <th>Commander le</th>
+                    <th>Prix</th>
+                    <th>Statue</th>
+                    <th>Detail</th>
+                    <th>Traitement</th>
+                </thead>
+                <tbody class="tbody">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>22</td>
+                        <td>22 mars 2021</td>
+                        <td>289 $</td>
+                        <td>en cour de traitement</td>
+                        <td>
+                            <img class="detail" src="/assets/img/information.png" alt="info">
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="aucunep" id="aucune">
+                <p id="aucp">Aucune commande éffectuer</p>
+            </div>
+        </div>
+
+        <div class="commandesp">
+            <div class="liste">
+                <h1 class="li">Liste des commandes personnalisés</h1>
+            </div>
+            <table class="tablep">
+                <thead class="theadp">
+                    <th>ID client</th>
+                    <th>Bouquet</th>
+                    <th>Quantité</th>
+                    <th>Commander le</th>
+                    <th>Prix</th>
+                    <th>Statue</th>
+                    <th>Detail</th>
+                    <th>Traitement</th>
+                </thead>
+                <tbody class="tbodyp">
+                    <!-- <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>22</td>
+                        <td>22 mars 2021</td>
+                        <td>289 $</td>
+                        <td>en cour de traitement</td>
+                        <td>
+                            <img class="detail" src="/assets/img/information.png" alt="info">
+                        </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="aucune" hidden="true">
+                <p id="aucp">Aucune commande personnalisée</p>
+            </div>
+        </div>
+
+
+        <div class="information" hidden=true>
+            <div class="info_header">
+                <p class="dt">Details</p>
+                <div class="annuler">
+                    <img src="../assets/img/cancel.png" alt="cancel">
+                </div>
+            </div>
+            <div class="info_body">
+                <div class="info_titre"></div>
+                <div class="info_bbody">
+                    <div class="info_img" style="top: 1px">
+                        <img src="" alt="" id="img">
+                    </div>
+                    <div class="info_discription">
+                        <p class="ctitre">mon titre</p>
+                        <p class="discription">voila ma petit discription</p>
+                    </div>
+
+                </div>
+                <div class="info_footer">
+
+                    <div class="pr">
+                        <p class="info_prix"><span id="prix"></span> <img src="../assets/img/euro.png" alt="1" class="euro qimg"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

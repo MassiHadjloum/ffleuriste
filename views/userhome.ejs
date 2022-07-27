@@ -1,0 +1,25 @@
+<!--HEAD-->
+<%- include('include/_headers')%>
+    <link rel="stylesheet" href="/css/client.css" type="text/css">
+    <script type="text/javascript" src="/js/client.js"></script>
+    </head>
+    <!--/HEAD-->
+
+
+    <div class="navigation">
+        <div class="logout">
+            <a href="/logout">Logout</a>
+        </div>
+        <div class="navigate">
+            <a href="/panier/id/<%=id_client%>">Panier</a>
+            <a href="/commande_personaliser/id/<%=id_client%>">Fabriquer</a>
+        </div>
+    </div>
+
+    <!--BODY -->
+    <%- include('include/_body_client')%>
+        <!--BODY-->
+
+        <!--FOOTER-->
+        <%- include('include/_footer')%>
+            <!--/FOOTER-->

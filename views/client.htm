@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouquets fleurs</title>
+    <link rel="stylesheet" href="../assets/css/client.css">
+    <script src="../assets/js/jquery-3.5.1.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../assets/js/client.js"></script>
+
+
+    <script>
+        let panier =
+            $(document).ready(() => {
+
+                $('.ff').mouseover(() => {
+
+                    })
+                    // if ($(`#${elem.id}`).css('display') == 'none')
+
+            })
+    </script>
+</head>
+
+
+<body>
+    <div>
+        <li hidden="true"></li>
+        <a href="http://localhost:8080/logout">Logout</a>
+        <a href="http://localhost:8080/panier/id/3">Panier</a>
+        <a href="http://localhost:8080/commande_personaliser">Fabriquer</a>
+    </div>
+    <div class="filter">
+        <label>Filtrer selon vos prix</label>
+        <input type="number" min="20" name="range" id="range">
+
+    </div>
+    <div class="container">
+        <div class="carou">
+            <div class="btng">
+                <button id="g">g</button>
+            </div>
+            <div class="btnd">
+                <button id="d">d</button>
+            </div>
+            <!--  <div class="items">
+                <div class="item">
+                    <div class="image">
+                        <img class="img" src="" alt="1">
+                    </div>
+                    <div class="body">
+                        <div class="title">
+                            <h3></h3>
+                        </div>
+                        <div class="prix">
+                            <p></p>
+                        </div>
+                    </div>
+                </div> -->
+        </div>
+
+        <!--  </div>
+        <div class="carou">
+            <div class="items">
+
+            </div>
+        </div>
+        <div class="carou">
+            <div class="items">
+
+            </div>
+        </div> -->
+
+
+
+    </div>
+    <div class="information" hidden=true>
+        <div class="info_header">
+            <p class="dt">Details</p>
+            <div class="annuler">
+                <img src="../assets/img/cancel.png" alt="cancel">
+            </div>
+        </div>
+        <div class="info_body">
+            <div class="info_titre"></div>
+            <div class="info_bbody">
+                <div class="info_img">
+                    <img src="" alt="" id="img">
+                </div>
+                <div class="info_panier">
+                    <div class="info_quantite">
+                        <label class="info_label">Quantité :</label>
+                        <img src="../assets/img/minus.png" class="qimg" id="minus" alt="minus">
+                        <p class="info_quantity"></p>
+                        <img src="../assets/img/plus.png" class="qimg" id="plus" alt="plus">
+                    </div>
+                    <div class="info_quantite">
+                        <label class="info_label">Disponible : </label>
+                        <p class="disponible"></p>
+                    </div>
+                    <div class="btn_cmd">
+                        <button class="cmd">Commander</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="info_footer">
+            <div class="info_discription">
+                <p class="discription">voila ma petit discription</p>
+                <div class="pr">
+                    <p class="info_prix">26</p>
+                    <img src="../assets/img/euro.png" alt="1" class="euro qimg">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        let t = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+        console.log(t.findIndex((e) => e === 44));
+    </script>
+</body>
+
+</html>
